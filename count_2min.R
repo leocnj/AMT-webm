@@ -33,16 +33,21 @@ add_tkID <- function(noID, pair.csv, out.csv) {
   
 }
 
-amt_907 <- tk_check('amt_907_915.csv')
-amt_916 <- tk_check('amt_916_919.csv')
-
-out_916 <- add_tkID(amt_916, 'HIT_0916.csv', 'amt_916_tk.csv')
-
 # file copy
 # based on http://stackoverflow.com/questions/2384517/using-r-to-copy-files
 # random item.
-items <- ceiling(runif(61, 0, 8))
-videos_src <-
-  paste('../amt_916_919/', out_916$turk, '_', items, '.webm', sep = '')
-videos_dst <- 'forReview_916'
-file.copy(videos_src, videos_dst)
+gen_forReview <- function(src_dir, tk_csv, dst_dir){
+  items <- ceiling(runif(61, 0, 8))
+  videos_src <-
+    paste(src_dir, tk_csv$turk, '_', items, '.webm', sep = '')
+  file.copy(videos_src, dst_dir)
+  
+}
+
+
+amt_907 <- tk_check('amt_907_915.csv')
+amt_916 <- tk_check('amt_916_919.csv')
+amt_920 <- tk_check('amt_920_923.csv')
+
+out_916 <- add_tkID(amt_916, 'HIT_0916.csv', 'amt_916_tk.csv')
+out_920 <- add_tkID(amt_920, 'HIT_0920.csv', 'amt_920_tk.csv')
