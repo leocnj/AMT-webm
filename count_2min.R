@@ -48,8 +48,10 @@ gen_forReview <- function(src_dir, tk_csv, dst_dir){
 amt_907 <- tk_check('amt_907_915.csv')
 amt_916 <- tk_check('amt_916_919.csv')
 amt_920 <- tk_check('amt_920_923.csv')
+amt_923 <- tk_check('amt_923_929.csv')
 
 # out_916 <- add_tkID(amt_916, 'HIT_0916.csv', 'amt_916_tk.csv')
 # out_920 <- add_tkID(amt_920, 'HIT_0920.csv', 'amt_920_tk.csv')
-out_907 <- add_tkID(amt_907, 'HIT_0907.csv', 'amt_907_tk.csv')
+# out_907 <- add_tkID(amt_907, 'HIT_0907.csv', 'amt_907_tk.csv')
+out_923 <- add_tkID(amt_923, 'HIT_0923.csv', 'amt_923_tk.csv')
 
