@@ -18,6 +18,9 @@ ios = {'src' : '../HIT_923_929/',
        'dst' : '../forRating_923/',
        'csv' : 'amt_923_tk.csv'}
 
+ios = {'src' : '../HIT_930_102/',
+       'dst' : '../forRating_929/',
+       'csv' : 'amt_929_tk.csv'}
 
 df = pd.read_csv(ios['csv'], dtype=str) # using 'str' for a easy work
 
