@@ -22,6 +22,10 @@ ios = {'src' : '../HIT_930_102/',
        'dst' : '../forRating_929/',
        'csv' : 'amt_929_tk.csv'}
 
+ios = {'src' : '../HIT_104_107/',
+       'dst' : '../forRating_104/',
+       'csv' : 'amt_104_tk.csv'}
+
 df = pd.read_csv(ios['csv'], dtype=str) # using 'str' for a easy work
 
 # find toRate == 1
