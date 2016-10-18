@@ -53,6 +53,7 @@ amt_929 <- tk_check('amt_929_930.csv')
 amt_104 <- tk_check('amt_104_107.csv')
 amt_107 <- tk_check('amt_107_1010.csv')
 amt_1010 <- tk_check('amt_1010_1013.csv')
+amt_1014 <- tk_check('amt_1014_1017.csv')
 
 
 
@@ -63,4 +64,5 @@ amt_1010 <- tk_check('amt_1010_1013.csv')
 # out_929 <- add_tkID(amt_929, 'HIT_0929.csv', 'amt_929_tk.csv')
 # out_104 <- add_tkID(amt_104, 'HIT_1004.csv', 'amt_104_tk.csv')
 # out_107 <- add_tkID(amt_107, 'HIT_1007.csv', 'amt_107_tk.csv')
-out_1010 <- add_tkID(amt_1010, 'HIT_1010.csv', 'amt_1010_tk.csv')
+# out_1010 <- add_tkID(amt_1010, 'HIT_1010.csv', 'amt_1010_tk.csv')
+out_1014 <- add_tkID(amt_1014, 'HIT_1014.csv', 'amt_1014_tk.csv')
